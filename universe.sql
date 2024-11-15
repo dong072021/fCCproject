@@ -220,11 +220,27 @@ INSERT INTO public.star VALUES (6, 206, 'Arcturus', 'Arcturus is the fourth-brig
 
 
 --
+-- Name: earth earth_id_key; Type: CONSTRAINT; Schema: public; Owner: freecodecamp
+--
+
+ALTER TABLE ONLY public.earth
+    ADD CONSTRAINT earth_id_key UNIQUE (id);
+
+
+--
 -- Name: earth earth_pkey; Type: CONSTRAINT; Schema: public; Owner: freecodecamp
 --
 
 ALTER TABLE ONLY public.earth
     ADD CONSTRAINT earth_pkey PRIMARY KEY (earth_id);
+
+
+--
+-- Name: galaxy galaxy_id_key; Type: CONSTRAINT; Schema: public; Owner: freecodecamp
+--
+
+ALTER TABLE ONLY public.galaxy
+    ADD CONSTRAINT galaxy_id_key UNIQUE (id);
 
 
 --
@@ -236,6 +252,14 @@ ALTER TABLE ONLY public.galaxy
 
 
 --
+-- Name: moon moon_id_key; Type: CONSTRAINT; Schema: public; Owner: freecodecamp
+--
+
+ALTER TABLE ONLY public.moon
+    ADD CONSTRAINT moon_id_key UNIQUE (id);
+
+
+--
 -- Name: moon moon_pkey; Type: CONSTRAINT; Schema: public; Owner: freecodecamp
 --
 
@@ -244,11 +268,27 @@ ALTER TABLE ONLY public.moon
 
 
 --
+-- Name: planet planet_id_key; Type: CONSTRAINT; Schema: public; Owner: freecodecamp
+--
+
+ALTER TABLE ONLY public.planet
+    ADD CONSTRAINT planet_id_key UNIQUE (id);
+
+
+--
 -- Name: planet planet_pkey; Type: CONSTRAINT; Schema: public; Owner: freecodecamp
 --
 
 ALTER TABLE ONLY public.planet
     ADD CONSTRAINT planet_pkey PRIMARY KEY (planet_id);
+
+
+--
+-- Name: star star_id_key; Type: CONSTRAINT; Schema: public; Owner: freecodecamp
+--
+
+ALTER TABLE ONLY public.star
+    ADD CONSTRAINT star_id_key UNIQUE (id);
 
 
 --
